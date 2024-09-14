@@ -1,4 +1,3 @@
-        /* Additional Custom Styling */
         .nav-link {
             color: #4a5568;
         }
@@ -28,7 +27,6 @@
             }
         }
 
-        /* Custom styles for the section background */
         #programs {
             background-color: #fff;
         }
@@ -42,7 +40,6 @@
             background-size: 100px 100px;
         }
 
-        /* Add a subtle particle effect to the background */
         body::after {
             content: '';
             position: fixed;
@@ -62,4 +59,7 @@
 
         :root {
             --bg-color: #ffffff;
+        }
+        h2{
+          color: #FDC800;
         }
