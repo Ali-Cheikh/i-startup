@@ -4,7 +4,6 @@ async function getUserDetails() {
         let response = await fetch(`https://api.ipgeolocation.io/ipgeo?apiKey=${apiKey}`);
         let data = await response.json();
 
-        // Extract IP and time
         let ip = data.ip;
         let time = data.time_zone.current_time.split(" ")[1].substring(0, 5);
         document.getElementById('user-details').innerHTML = `If you are interested in Joining Our Team<br> Time now : ${time} <button id="join-waitlist" class="mt-6 px-4 py-2 bg-blue-500 text-white rounded-md hover:bg-blue-600 font-manrope font-bold">Join the Waitlist</button><br>`;
@@ -19,6 +18,8 @@ async function getUserDetails() {
         console.error("Error fetching user details:", error);
     }
 }
+
+    // Don't worry no-one is trying to hack you :P
 
 function initMap(lat, lng) {
     var map = L.map('map').setView([lat, lng], 12);
