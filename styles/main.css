@@ -1,0 +1,65 @@
+        /* Additional Custom Styling */
+        .nav-link {
+            color: #4a5568;
+        }
+
+        .nav-link:hover {
+            color: #6366f1;
+        }
+
+        .animate-on-scroll {
+            opacity: 0;
+        }
+
+        .animate-in-view {
+            opacity: 1;
+            animation: fadeInUp 1s ease-out;
+        }
+
+        @keyframes fadeInUp {
+            from {
+                opacity: 0;
+                transform: translateY(50px);
+            }
+
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        /* Custom styles for the section background */
+        #programs {
+            background-color: #fff;
+        }
+        body {
+            margin: 0;
+            padding: 0;
+            background-color: var(--bg-color);
+            background-image: 
+                radial-gradient(circle at 25px 25px, rgba(255, 0, 0, 0.1) 2%, transparent 0%),
+                radial-gradient(circle at 75px 75px, rgba(25, 0, 255, 0.1) 2%, transparent 0%);
+            background-size: 100px 100px;
+        }
+
+        /* Add a subtle particle effect to the background */
+        body::after {
+            content: '';
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            pointer-events: none;
+            background-image: url('data:image/svg+xml,%3Csvg width="20" height="20" xmlns="http://www.w3.org/2000/svg"%3E%3Ccircle cx="10" cy="10" r="1" fill="%23ff0000" fill-opacity="0.2"/%3E%3C/svg%3E');
+            animation: particleMove 60s linear infinite;
+        }
+
+        @keyframes particleMove {
+            0% { background-position: 0 0; }
+            100% { background-position: 1000px 1000px; }
+        }
+
+        :root {
+            --bg-color: #ffffff;
+        }
