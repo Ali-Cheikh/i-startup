@@ -1,0 +1,5 @@
+User-agent: *
+Disallow: /admin/    # Block the admin section of your website
+Disallow: /private/  # Block any private sections
+
+Sitemap: https://i-startup.tn/sitemap.xml
