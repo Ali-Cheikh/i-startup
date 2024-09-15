@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>404 Not Found</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <style>
+    body {
+      background-color: #f3f4f6; /* light gray background */
+      overflow: hidden;
+    }
+
+    .float-animation {
+      animation: float 4s ease-in-out infinite;
+    }
+
+    @keyframes float {
+      0% {
+        transform: translateY(0px);
+      }
+      50% {
+        transform: translateY(-20px);
+      }
+      100% {
+        transform: translateY(0px);
+      }
+    }
+
+    .rotate-animation {
+      animation: rotate 10s linear infinite;
+    }
+
+    @keyframes rotate {
+      0% {
+        transform: rotate(0deg);
+      }
+      100% {
+        transform: rotate(360deg);
+      }
+    }
+  </style>
+</head>
+<body class="h-screen flex items-center justify-center p-4 mb-12">
+
+  <div class="text-center space-y-6 relative">
+    
+    <!-- Floating UFO Icon -->
+    <div class="float-animation" style="font-size: 80px;">
+     🛸
+    </div>
+    
+    <!-- Main Content -->
+    <h1 class="text-6xl font-bold text-gray-800">404</h1>
+    <p class="text-xl text-gray-600">
+      Oops! You've wandered into the void... 🤖
+    </p>
+    <p class="text-md text-gray-500">
+      We couldn't find the page you're looking for, but hey, at least you found this cool page!
+    </p>
+    
+    <button 
+      onclick="goHome()"
+      class="px-6 py-3 bg-indigo-600 text-white rounded-full hover:bg-indigo-700 transition duration-300 ease-in-out">
+      🚀 Beam me back to safety!
+    </button>
+
+    <p class="text-gray-500 text-sm mt-4">Or, try the Konami Code if you’re feeling adventurous. 😉</p>
+    <!-- Background Vectors -->
+    <div class="absolute top-0 left-0 w-40 h-40 bg-indigo-600 rounded-full opacity-20 rotate-animation"></div>
+    <div class="absolute bottom-0 right-0 w-40 h-40 bg-gray-600 rounded-full opacity-20 rotate-animation"></div>
+    
+  </div>
+
+  <script>
+    // JavaScript to redirect back to homepage
+    function goHome() {
+      window.location.href = 'https://wwww.i-startup.tn'; // Adjust this to your homepage URL
+    }
+  </script>
+
+</body>
+</html>
