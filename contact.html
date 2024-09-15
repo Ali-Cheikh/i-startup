@@ -87,7 +87,7 @@
                 Have questions? Let’s talk!
             </p>
 
-            <form id="contact-form" method="post" class="animate__animated animate__fadeInUp">
+            <form id="contact-form" method="post" class="animate__animated animate__fadeInUp app-form" name="contact-form">
 
                 <section class="py-24">
                     <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
@@ -139,8 +139,8 @@
                                 <h2 class=" font-manrope text-4xl font-semibold leading-10 mb-11 fade-in-up" style="color: blue">Send Us A Message</h2>
                                 <input type="text" class="w-full h-12 text-blue-600 placeholder-blue-400  shadow-sm bg-transparent text-lg font-normal leading-7 rounded-lg border border-blue-200 focus:outline-none pl-4 mb-10" placeholder="Name " name="name">
                                 <input type="text" class="w-full h-12 text-blue-600 placeholder-blue-400  shadow-sm bg-transparent text-lg font-normal leading-7 rounded-lg border border-blue-200 focus:outline-none pl-4 mb-10" placeholder="Subject " name="subject">
-                                <input type="text" class="w-full h-12 text-blue-600 placeholder-blue-400  shadow-sm bg-transparent text-lg font-normal leading-7 rounded-full border border-blue-200 focus:outline-none pl-4 mb-10" placeholder="Contact Number " name="name">
-                                <input type="text" class="w-full h-12 text-blue-600 placeholder-blue-400 shadow-sm bg-transparent text-lg font-normal leading-7 rounded-lg border border-blue-200 focus:outline-none pl-4 mb-10" placeholder="Email " name="email">
+                                <input type="tel" class="w-full h-12 text-blue-600 placeholder-blue-400  shadow-sm bg-transparent text-lg font-normal leading-7 rounded-full border border-blue-200 focus:outline-none pl-4 mb-10" placeholder="Contact Number " name="number">
+                                <input type="email" class="w-full h-12 text-blue-600 placeholder-blue-400 shadow-sm bg-transparent text-lg font-normal leading-7 rounded-lg border border-blue-200 focus:outline-none pl-4 mb-10" placeholder="Email " name="email">
                                 <textarea type="text" class="w-full h-12 text-blue-600 placeholder-blue-400 bg-transparent text-lg shadow-sm font-normal leading-7 rounded-lg border border-blue-200 focus:outline-none pl-4 mb-10" placeholder="Message" name="message" cols="16" rows="10"></textarea>
                                 <button type="submit" class="w-full h-12 text-white bg-blue-500 font-semibold leading-6 rounded-lg transition-all duration-700 hover:bg-blue-700 shadow-sm" disabled>Send</button>
                             </div>
@@ -189,5 +189,7 @@
     <script src="scripts/main.js"></script>
 
     <script src="scripts/contactmap.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
 </body>
 </html>
