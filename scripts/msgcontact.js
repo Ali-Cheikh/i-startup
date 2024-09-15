@@ -1,65 +1,38 @@
 
 const scriptURL = 'https://script.google.com/macros/s/AKfycbxN5W75kNRF1Nsl-9-Cko0gAV9uU22-T62U0k6MKDAkWk235gsyigqs5QFS1Mdskp5Fxw/exec';
 
-$(document).ready(function () {
-    $('.app-form').on('submit', function (e) {
+document.addEventListener('DOMContentLoaded', function () {
+    const form = document.getElementById('contact-form');
+    const sendButton = document.getElementById('send');
+
+    sendButton.addEventListener('click', function (e) {
         e.preventDefault();
 
+                // Validate form inputs
+                if (!form.checkValidity()) {
+                    Swal.fire({
+                        icon: 'error',
+                        title: 'Invalid input',
+                        text: 'Please fill in all required fields. Correctly'
+                    });
+                    return;
+                }
+
+        // Show SweetAlert immediately when the submit button is clicked
         Swal.fire({
             icon: 'info',
             title: 'Please wait...',
             text: 'Sending your message',
-            willOpen: () => {
-                Swal.showLoading();
-            },
             showConfirmButton: false,
-            allowOutsideClick: false,
-            background: "#ddbf51d0",
-            color:"#000"
+            allowOutsideClick: false
         });
 
-        const formData = new FormData(this);
-
-        $.ajax({
-            url: scriptURL,
-            method: 'POST',
-            data: formData,
-            processData: false,
-            contentType: false,
-            success: function (data) {
-                console.log("Response from Google Sheets:", data);
-
-                if (data.result === 'success') {
-                    Swal.fire({
-                        imageUrl: "Assets/logocon-full-B.png",
-                        imageAlt: "Custom Success Icon",
-                        title: 'Success!',
-                        text: 'Your message is sent. Thank you for reaching out.',
-                        width: 600,
-                        padding: "3em",
-                        timer: 5000,
-                        timerProgressBar: true,
-                        showConfirmButton: false,
-                        allowOutsideClick: false,
-                        color: "#fff",
-                        background: "#6366f1",
-                        backdrop: "rgba(0,0,0,0.4)",
-                    }).then(() => {
-                        window.location.reload();
-                    });
-                } else {
-                    console.error('Error:', data.error);
-                    Swal.fire({
-                        icon: 'error',
-                        title: 'Oops...',
-                        text: 'Something went wrong! Please try again later.',
-                    });
-                }
-            },
-            error: function (error) {
-                console.error('Error!', error);
+        // Make the fetch request to the server
+        fetch(scriptURL, { method: 'POST', body: new FormData(form) })
+            .then(response => {
+                // Handle response here
                 Swal.fire({
-                    imageUrl: "Assets/logocon-full-B.png",
+                    imageUrl: "Assets/logocon-full.png",
                     imageAlt: "Custom Success Icon",
                     title: 'Success!',
                     text: 'Your message is sent. Thank you for reaching out.',
@@ -69,18 +42,36 @@ $(document).ready(function () {
                     timerProgressBar: true,
                     showConfirmButton: false,
                     allowOutsideClick: false,
-                    color: "#fff",
-                    background: "#6366f1",
+                    color: "#000",
+                    background: "#63ddff",
                     backdrop: "rgba(0,0,0,0.4)",
-                    }).then(() => {
-                        window.location.reload();
-                    });
-            }
-        });
+                }).then(() => {
+                    form.submit();
+                    window.location.reload(); // Reload the page after successful submission
+                });
+            })
+            .catch(error => {
+                console.error('Error!', error.message);
+                Swal.fire({
+                    imageUrl: "Assets/logocon-full.png",
+                    imageAlt: "Custom Success Icon",
+                    title: 'Success!',
+                    text: 'Your message is sent. Thank you for reaching out.',
+                    width: 600,
+                    padding: "3em",
+                    timer: 5000,
+                    timerProgressBar: true,
+                    showConfirmButton: false,
+                    allowOutsideClick: false,
+                    color: "#000",
+                    background: "#63ddff",
+                    backdrop: "rgba(0,0,0,0.4)",
+                }).then(() => {
+                    form.submit();
+                    window.location.reload();
+                });
+            });
     });
 });
-
-
-
 /*============================================================================================================================================================= */
 
