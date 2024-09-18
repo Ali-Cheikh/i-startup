@@ -161,6 +161,82 @@
       <button type="submit" class="bg-secondary text-secondary-foreground hover:bg-secondary/80 p-2 rounded w-full">Apply</button>
     </form>
     </div>
+
+    <div class="max-w-2xl mx-auto p-6 bg-white shadow-md rounded-lg mt-10">
+        <h2 class="text-4xl font-bold mb-6 text-center">Startup Application</h2>
+        <p class="text-gray-600 mb-4 text-center">Please complete the form below to apply for our programs.</p>
+        <form method="post" id="startup-application">
+            <div class="mb-4">
+                <label class="block text-sm font-medium text-gray-700">Program Selection</label>
+                <div class="flex space-x-4">
+                    <label class="flex items-center">
+                        <input type="radio" name="program" value="incubation" required class="mr-2">
+                        Incubation Program
+                    </label>
+                    <label class="flex items-center">
+                        <input type="radio" name="program" value="acceleration" required class="mr-2">
+                        Acceleration Program
+                    </label>
+                </div>
+            </div>
+
+            <div class="mb-4">
+                <label class="block text-sm font-medium text-gray-700">Startup Name</label>
+                <input type="text" placeholder="Startup Name" class="p-2 border border-gray-300 rounded w-full" required />
+            </div>
+
+            <div class="mb-4">
+                <label class="block text-sm font-medium text-gray-700">Founder Name</label>
+                <input type="text" placeholder="Founder Name" class="p-2 border border-gray-300 rounded w-full" required />
+            </div>
+
+            <div class="mb-4">
+                <label class="block text-sm font-medium text-gray-700">CIN (National ID)</label>
+                <input type="text" placeholder="Enter 8-digit CIN" pattern="\d{8}" title="Please enter exactly 8 digits" class="p-2 border border-gray-300 rounded w-full" required />
+            </div>
+
+            <div class="mb-4">
+                <label class="block text-sm font-medium text-gray-700">Email Address</label>
+                <input type="email" placeholder="example@example.com" class="p-2 border border-gray-300 rounded w-full" required />
+            </div>
+
+            <div class="mb-4">
+                <label class="block text-sm font-medium text-gray-700">Phone Number</label>
+                <input type="tel" placeholder="(00) 00-00-00" class="p-2 border border-gray-300 rounded w-full" required />
+            </div>
+
+            <div class="mb-4">
+                <label class="block text-sm font-medium text-gray-700">Briefly Describe Your Idea</label>
+                <textarea class="p-2 border border-gray-300 rounded w-full" rows="4" placeholder="Describe your startup idea here..." required></textarea>
+            </div>
+
+            <div class="mb-4">
+                <label class="block text-sm font-medium text-gray-700">Current Status</label>
+                <select class="p-2 border border-gray-300 rounded w-full" required>
+                    <option value="" disabled selected>Select your status</option>
+                    <option value="idea">Idea Stage</option>
+                    <option value="prototype">Prototype Stage</option>
+                    <option value="existing">Existing Product</option>
+                </select>
+            </div>
+
+            <div class="mb-4">
+                <label class="block text-sm font-medium text-gray-700">Do you require initial funding?</label>
+                <select class="p-2 border border-gray-300 rounded w-full">
+                    <option value="yes">Yes</option>
+                    <option value="no">No</option>
+                </select>
+            </div>
+
+            <div class="mb-4">
+                <label class="block text-sm font-medium text-gray-700">What are your primary goals for this program?</label>
+                <textarea class="p-2 border border-gray-300 rounded w-full" rows="4" placeholder="Your goals..." required></textarea>
+            </div>
+
+            <button type="submit" class="bg-blue-600 text-white hover:bg-blue-700 p-2 rounded w-full">Submit Application</button>
+        </form>
+    </div>
+
     <footer class="bg-gray-900 text-gray-400 py-8">
         <div class="container mx-auto px-6">
             <div class="flex justify-between items-center">
