@@ -59,9 +59,7 @@
       We couldn't find the page you're looking for, but hey, at least you found this cool page!
     </p>
     
-    <button 
-      onclick="goHome()"
-      class="px-6 py-3 bg-indigo-600 text-white rounded-full hover:bg-indigo-700 transition duration-300 ease-in-out">
+    <button onclick="goHome()" class="px-6 py-3 bg-indigo-600 text-white rounded-full hover:bg-indigo-700 transition duration-300 ease-in-out">
       🚀 Beam me back to safety!
     </button>
 
@@ -75,13 +73,7 @@
   <script>
     // JavaScript to redirect back to homepage
     function goHome() {
-      Swal.fire({
-        icon: 'error',
-        title: 'We are Not hiring right now',
-        text: 'We appreciate your gesture although we have no empty positions. You can surely contact us.'
-      }).then(() => {
-        window.location.href = '/index.html'; // Adjust this to your homepage URL
-      });
+      window.location.href = '/index.html'; // Adjust this to your homepage URL
     }
   </script>
   <script src="https://cdn.jsdelivr.net/npm/sweetalert2@10"></script>
