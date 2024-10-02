@@ -1,22 +1,21 @@
 
-const scriptURL = 'https://script.google.com/macros/s/AKfycbxN5W75kNRF1Nsl-9-Cko0gAV9uU22-T62U0k6MKDAkWk235gsyigqs5QFS1Mdskp5Fxw/exec';
-
+const scriptURL = "https://script.google.com/macros/s/AKfycbw0VkzowA_DO9Gf4T7FVhUHK8O2yBSkOuemJUcGALbrIBsEvKQmJ2lVbHhggun5RHMn/exec";
 document.addEventListener('DOMContentLoaded', function () {
-    const form = document.getElementById('Acceleration-app');
+    const form = document.getElementById('acceleration-app');
     const sendButton = document.getElementById('send');
 
     sendButton.addEventListener('click', function (e) {
         e.preventDefault();
 
-                // Validate form inputs
-                if (!form.checkValidity()) {
-                    Swal.fire({
-                        icon: 'error',
-                        title: 'Invalid input',
-                        text: 'Please fill in all required fields. Correctly'
-                    });
-                    return;
-                }
+        // Validate form inputs
+        if (!form.checkValidity()) {
+            Swal.fire({
+                icon: 'error',
+                title: 'Invalid input',
+                text: 'Please fill in all required fields correctly.'
+            });
+            return;
+        }
 
         // Show SweetAlert immediately when the submit button is clicked
         Swal.fire({
@@ -30,22 +29,24 @@ document.addEventListener('DOMContentLoaded', function () {
         // Make the fetch request to the server
         fetch(scriptURL, { method: 'POST', body: new FormData(form) })
             .then(response => {
-                // Handle response here
-                Swal.fire({
-                    imageUrl: "Assets/logocon-full.png",
-                    imageAlt: "Custom Success Icon",
-                    title: 'Success!',
-                    text: 'Your message is sent. Thank you for reaching out.',
-                    width: 600,
-                    padding: "3em",
-                    timer: 5000,
-                    timerProgressBar: true,
-                    showConfirmButton: false,
-                    allowOutsideClick: false,
-                }).then(() => {
-                    form.submit();
-                    window.location.reload(); // Reload the page after successful submission
-                });
+                if (response.ok) {
+                    Swal.fire({
+                        imageUrl: "Assets/logocon-full.png",
+                        imageAlt: "Custom Success Icon",
+                        title: 'Success!',
+                        text: 'Application submitted successfully. We will get in touch with you very soon.',
+                        width: 600,
+                        padding: "3em",
+                        timer: 5000,
+                        timerProgressBar: true,
+                        showConfirmButton: false,
+                        allowOutsideClick: false,
+                    }).then(() => {
+                        form.reset(); // Reset the form after successful submission
+                    });
+                } else {
+                    throw new Error('Form submission failed');
+                }
             })
             .catch(error => {
                 console.error('Error!', error.message);
@@ -53,7 +54,7 @@ document.addEventListener('DOMContentLoaded', function () {
                     imageUrl: "Assets/logocon-full.png",
                     imageAlt: "Custom Success Icon",
                     title: 'Success!',
-                    text: 'Your message is sent. Thank you for reaching out.',
+                    text: 'Application submitted successfully. We will get in touch with you very soon.',
                     width: 600,
                     padding: "3em",
                     timer: 5000,
@@ -61,11 +62,8 @@ document.addEventListener('DOMContentLoaded', function () {
                     showConfirmButton: false,
                     allowOutsideClick: false,
                 }).then(() => {
-                    form.submit();
-                    window.location.reload();
+                    form.reset(); // Reset the form after successful submission
                 });
             });
     });
 });
-/*============================================================================================================================================================= */
-
