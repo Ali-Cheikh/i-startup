@@ -79,17 +79,12 @@
 
      
     <div class="max-w-2xl mx-auto p-6 bg-card bg-white text-center pt-32">
-        <h2 class="text-4xl font-bold mb-10 animate__animated animate__fadeInUp">Acceleration Program</h2>
-        <p class="text-muted-foreground mb-12 display-5">Please complete the form below to apply for our program.</p>
+        <h2 class="text-4xl font-bold mb-10 animate__animated animate__fadeInUp">Incubation Program</h2>
+        <p class="text-muted-foreground mb-12 display-6">You have an idea that you believe it can be transformed into a<b> Startup ? </b><br>Please complete the form below to apply for our program.</p>
         <form method="post" id="acceleration-app" class="acceleration-app">
             <div class="mb-4">
                 <label class="block text-xl font-medium text-gray-700">Startup Name</label>
                 <input type="text" placeholder="Startup Name" name="bname" class="p-2 border border-gray-300 rounded w-full" required />
-            </div>
-        
-            <div class="mb-4">
-                <label class="block text-xl font-medium text-gray-700">Social media link / alt @</label>
-                <input type="text" placeholder="@i-startup.tn on Instagram" class="p-2 border border-gray-300 rounded w-full" required name="modernContact"/>
             </div>
         
             <div class="mb-4">
@@ -113,7 +108,7 @@
             </div>
         
             <div class="mb-4">
-                <label class="block text-xl font-medium text-gray-700">Do you think about future funding?</label>
+                <label class="block text-xl font-medium text-gray-700">Do you require initial funding?</label>
                 <select class="p-2 border border-gray-300 rounded w-full" name="funding">
                     <option value="Funding required">Yes</option>
                     <option value="no funding required">No</option>
@@ -123,8 +118,8 @@
             <h5 class="text-2xl font-bold mb-10">About the Client</h5>
         
             <div class="mb-4">
-                <label class="block text-xl font-medium text-gray-700">Owner's Name</label>
-                <input type="text" placeholder="full Name" name="oname" class="p-2 border border-gray-300 rounded w-full" required />
+                <label class="block text-xl font-medium text-gray-700">Owner's brief</label>
+                <input type="text" placeholder="About you" name="oname" class="p-2 border border-gray-300 rounded w-full" required />
             </div>
         
             <div class="mb-4">
@@ -133,20 +128,22 @@
             </div>
         
             <div class="mb-4">
-                <label class="block text-xl font-medium text-gray-700">What are your primary goals for this program?</label>
-                <textarea class="p-2 border border-gray-300 rounded w-full" rows="4" placeholder="Your goals and expectations..." name="goal" required></textarea>
+                <label class="block text-xl font-medium text-gray-700">Startup idea and brief</label>
+                <textarea class="p-2 border border-gray-300 rounded w-full" rows="4" placeholder="Pitch your Plan your Goals and expectations..." name="goal" required></textarea>
             </div>
         
             <button type="submit" id="send" class="send bg-blue-600 text-white hover:bg-blue-700 p-2 rounded w-full">Submit Application</button>
         </form>
-        
+        <a href="accelerationapp.html" target="Join The Acceleration Program" title="Join The Acceleration Program" class="mt-12 inline-block bg-indigo-600 text-white px-8 py-3 rounded-md text-lg font-semibold hover:bg-indigo-700 animate__animated animate__fadeInUp animate__delay-1s">
+            Already have a startup?
+        </a>
     </div>
 
     <footer class="bg-gray-900 text-gray-400 py-8">
         <div class="container mx-auto px-6">
             <!-- Logo on top in phone view -->
             <div class="flex justify-center mb-4 md:hidden">
-                <img src="Assets/logocon-full.png" alt="I-StartUp Logo" class="h-18 w-18">
+                <img src="Assets/logocon-full-empty.png" alt="I-StartUp Logo" class="h-18 w-18">
             </div>
 
             <div class="flex flex-wrap justify-between items-center">
