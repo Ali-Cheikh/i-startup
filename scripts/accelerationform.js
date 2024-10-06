@@ -1,5 +1,5 @@
 
-const scriptURL = "https://script.google.com/macros/s/AKfycbyMDIvxKW3On4D7wzzcIxlXr4a-MWz0AUn-Qag_JabIAXSK2y6Rq3yQA06VeHTksQja/exec";
+const scriptURL = "https://script.google.com/macros/s/AKfycbz4Brg4R30okN1Jwz-7wq7iUplMbJK4U-OacAUjzJW_P1AiMAEvzY23l4vCW-EJx4Pf/exec";
 document.addEventListener('DOMContentLoaded', function () {
     const form = document.getElementById('acceleration-app');
     const sendButton = document.getElementById('send');
