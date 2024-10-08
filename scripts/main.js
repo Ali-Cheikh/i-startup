@@ -11,20 +11,20 @@ document.addEventListener('scroll', () => {
 window.onload = function() {
     const currentPath = window.location.pathname;
 
-    // Mapping paths to new URLs
+    // Mapping paths to new paths (instead of domains)
     const pathMap = {
-        '/contact.html': 'Contact.i-startup.tn',
-        '/services.html': 'Service.i-startup.tn',
-        '/incubationapp.html': 'Incubation.i-startup.tn',
-        '/accelerationapp.html': 'Acceleration.i-startup.tn'
+        '/contact.html': '/contact-page',    // Change to /contact-page
+        '/services.html': '/services-page',  // Change to /services-page
+        '/incubationapp.html': '/incubation',// Change to /incubation
+        '/accelerationapp.html': '/acceleration'// Change to /acceleration
     };
 
-    // Get the new URL based on the current path
-    const newDomain = pathMap[currentPath];
+    // Get the new path based on the current URL path
+    const newPath = pathMap[currentPath];
 
-    // If a new URL exists, update the URL
-    if (newDomain) {
-        const newUrl = window.location.protocol + "//" + newDomain;
+    // If a new path exists, update the URL without reloading the page
+    if (newPath) {
+        const newUrl = window.location.protocol + "//" + window.location.host + newPath;
         window.history.pushState({}, "", newUrl);
     }
 };
