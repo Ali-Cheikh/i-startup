@@ -6,7 +6,7 @@ async function getUserDetails() {
 
         let ip = data.ip;
         let time = data.time_zone.current_time.split(" ")[1].substring(0, 5);
-        document.getElementById('user-details').innerHTML = `If you are interested in Joining Our Team<br> Time now : ${time} <button id="join-waitlist" class="mt-6 px-4 py-2 bg-blue-500 text-white rounded-md hover:bg-blue-600 font-manrope font-bold"><a href="application/jobform.html">Join the<br>Wait-list</a></button><br>`;
+        document.getElementById('user-details').innerHTML = `If you are interested in Joining Our Team<br> Time now : ${time} <button id="join-waitlist" class="mt-6 px-4 py-2 bg-blue-500 text-white rounded-md hover:bg-blue-600 font-manrope font-bold"><a href="applications/jobform.html">Join the<br>Wait-list</a></button><br>`;
 
         setInterval(() => {
             let currentTime = new Date().toLocaleTimeString([], { hour: '2-digit', minute: '2-digit' });
