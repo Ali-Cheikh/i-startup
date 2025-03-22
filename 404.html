@@ -1,93 +1,50 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>404 Not Found</title>
-  <meta property="og:type" content="website" />
-  <meta property="og:site_name" content="I-StartUp | 404">
-  <meta property="og:url" content="https://www.i-startup.tn/" />
-  <meta property="og:title" content="Not what you are looking for" />
-  <meta property="og:image" content="https://www.i-startup.tn/Assets/404.png" />
-
-  <!-- Twitter -->
-  <meta property="og:site_name" content="Are You Dumb ?!" />
-  <meta name="twitter:card" content="summary_large_image">
-  <meta name="twitter:url" content="https://www.i-startup.tn/" />
-  <meta name="twitter:title" content="404 Page | Not what you are looking for" />
-  <meta name="twitter:image" content="https://www.i-startup.tn/Assets/404.png" />
-  <script src="https://cdn.tailwindcss.com"></script>
-  <style>
-    body {
-      background-color: #f3f4f6; /* light gray background */
-      overflow: hidden;
-    }
-
-    .float-animation {
-      animation: float 4s ease-in-out infinite;
-    }
-
-    @keyframes float {
-      0% {
-        transform: translateY(0px);
-      }
-      50% {
-        transform: translateY(-20px);
-      }
-      100% {
-        transform: translateY(0px);
-      }
-    }
-
-    .rotate-animation {
-      animation: rotate 10s linear infinite;
-    }
-
-    @keyframes rotate {
-      0% {
-        transform: rotate(0deg);
-      }
-      100% {
-        transform: rotate(360deg);
-      }
-    }
-  </style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>404 - Page Not Found | I-StartUp</title>
+    
+    <!-- Use your existing stylesheets -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="styles/main.css">
 </head>
-<body class="h-screen flex items-center justify-center p-4 mb-12">
 
-  <div class="text-center space-y-6 relative">
-    
-    <!-- Floating UFO Icon -->
-    <div class="float-animation" style="font-size: 80px;">
-     🛸
+<body class="bg-blue-900">
+    <div class="min-h-screen flex flex-col items-center justify-center p-6">
+        <!-- Error Content -->
+        <div class="max-w-md w-full text-center space-y-8">
+            <!-- Logo -->
+            <div class="animate__animated animate__fadeInDown">
+                <img src="https://www.i-startup.tn/Assets/logocon-full-empty.png" 
+                     alt="I-StartUp Logo" 
+                     class="h-16 mx-auto">
+            </div>
+
+            <!-- Error Message -->
+            <div class="space-y-6 animate__animated animate__fadeIn">
+                <h1 class="text-6xl font-bold text-white">404</h1>
+                <h2 class="text-2xl font-medium text-yellow-400">Page Not Found</h2>
+                <p class="text-white">The page you're looking for doesn't seem to exist.</p>
+                
+                <!-- Back to Home Button -->
+                <a href="index.html" 
+                   class="inline-block px-6 py-3 bg-yellow-500 text-white rounded-md font-semibold hover:bg-yellow-400 transition-colors">
+                    Back to Home
+                </a>
+            </div>
+        </div>
+
+        <!-- Footer -->
+        <footer class="absolute bottom-6 text-center text-sm text-gray-500">
+            <p>© 2025 I-StartUp. All rights reserved.</p>
+        </footer>
     </div>
-    
-    <!-- Main Content -->
-    <h1 class="text-6xl font-bold text-gray-800">404</h1>
-    <p class="text-xl text-gray-600">
-      Oops! You've wandered into the void... 🤖
-    </p>
-    <p class="text-md text-gray-500">
-      We couldn't find the page you're looking for, but hey, at least you found this cool page!
-    </p>
-    
-    <button onclick="goHome()" class="px-6 py-3 bg-indigo-600 text-white rounded-full hover:bg-indigo-700 transition duration-300 ease-in-out">
-      🚀 Back To Landing Page!
-    </button>
 
-    <p class="text-gray-500 text-sm mt-4">If Something wrong accrued please contact contact@i-startup.tn 😉</p>
-    <!-- Background Vectors -->
-    <div class="absolute top-0 left-0 w-40 h-40 bg-indigo-600 rounded-full opacity-20 rotate-animation"></div>
-    <div class="absolute bottom-0 right-0 w-50 h-50 rounded-full"><img src="https://2392094.fs1.hubspotusercontent-na1.net/hub/2392094/hubfs/talent_profile.png?width=150&height=150&name=talent_profile.png" alt=""></div>
-    
-  </div>
-
-  <script>
-    // JavaScript to redirect back to homepage
-    function goHome() {
-      window.location.href = 'https://i-startup.tn'; // Adjust this to your homepage URL
-    }
-  </script>
-  <script src="https://cdn.jsdelivr.net/npm/sweetalert2@10"></script>
+    <!-- Scripts -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>
