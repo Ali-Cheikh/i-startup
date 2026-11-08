@@ -8,6 +8,7 @@
       ["/", "Home"],
       ["/services/", "Services"],
       ["/work/", "Work"],
+      ["/investment/", "Pricing"], // Added Investment
       ["/about/", "About"],
       ["/contact/", "Contact"]
     ];
@@ -17,7 +18,8 @@
     var links = getNavigation().map(function (item) {
       var itemPath = item[0].replace(/\/+$/, "");
       var isCurrent = currentPath === itemPath || (item[0] === "/" && (currentPath === "" || currentPath === "/")) ||
-        (item[0] === "/services/" && currentPath.indexOf("/services/") === 0);
+        (item[0] === "/services/" && currentPath.indexOf("/services/") === 0) ||
+        (item[0] === "/investment/" && currentPath.indexOf("/investment/") === 0); // Highlight active investment page
       return '<a href="' + item[0] + '"' + (isCurrent ? ' aria-current="page"' : "") + ">" + item[1] + "</a>";
     }).join("");
 
@@ -48,7 +50,7 @@
       '<div class="footer-grid">',
       '<div><h2>About</h2><p>A product engineering studio based in Tunisia, working remotely with teams worldwide.</p><a href="/about/">About I-StartUp</a></div>',
       '<div><h2>Services</h2><a href="/services/#development">Development</a><a href="/services/#automation">Automation</a><a href="/services/#systems">Internal systems</a></div>',
-      '<div><h2>Explore</h2><a href="/work/">Selected Work</a><a href="/process/">How We Work</a></div>',
+      '<div><h2>Explore</h2><a href="/work/">Selected Work</a><a href="/investment/">Investment Guide</a><a href="/process/">How We Work</a></div>', // Added Investment Link
       '<div><h2>Contact</h2><a href="mailto:contact@i-startup.tn">contact@i-startup.tn</a><a href="tel:+21690725434">+216 90 725 434</a></div>',
       '</div></div><div class="footer-bottom"><div class="wrap"><span>© 2026 I-StartUp.</span><a href="/">Home <i class="fa-solid fa-arrow-up" aria-hidden="true"></i></a></div></div></footer>'
     ].join("");
