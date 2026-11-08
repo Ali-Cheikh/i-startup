@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 700 120" width="100%" height="100%">
+  <rect width="700" height="120" fill="#ffffff" />
+  <g transform="translate(20, 20) scale(0.6)">
+    <rect width="100" height="100" fill="#ffffff" />
+    <rect x="24" y="24" width="16" height="52" fill="#161616" />
+    <path d="M 48 24 L 80 50 L 48 76 V 62 L 64 50 L 48 38 Z" fill="#0f62fe" />
+  </g>
+  <text x="90" y="65" font-family="'IBM Plex Sans', 'Helvetica Neue', sans-serif" font-weight="800" font-size="48" fill="#161616" letter-spacing="-1.5"><tspan>I-Start</tspan><tspan fill="#0f62fe">Up</tspan></text>
+  <text x="92" y="90" font-family="'IBM Plex Mono', 'SFMono-Regular', Consolas, monospace" font-weight="600" font-size="11" fill="#525252" letter-spacing="1.5"><tspan>YOU RUN THE BUSINESS. </tspan><tspan fill="#0f62fe">WE BUILD THE SYSTEMS.</tspan></text>
+</svg>

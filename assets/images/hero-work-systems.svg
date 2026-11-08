@@ -1,0 +1,30 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 760 520" role="img" aria-labelledby="title desc">
+  <title id="title">I-StartUp work systems</title>
+  <desc id="desc">Product, automation, and operations systems connected in one working board.</desc>
+  <rect width="760" height="520" fill="#262626"/>
+  <path d="M0 0h760M0 65h760M0 130h760M0 195h760M0 260h760M0 325h760M0 390h760M0 455h760M0 0v520M95 0v520M190 0v520M285 0v520M380 0v520M475 0v520M570 0v520M665 0v520" stroke="#525252" opacity=".55"/>
+  <rect x="48" y="46" width="664" height="42" fill="#161616" stroke="#525252"/>
+  <circle cx="72" cy="67" r="6" fill="#0f62fe"/>
+  <text x="92" y="72" fill="#f4f4f4" font-family="Arial, Helvetica, sans-serif" font-size="12" letter-spacing="2">I-STARTUP / OPERATING BOARD</text>
+  <text x="610" y="72" fill="#8daeff" font-family="Arial, Helvetica, sans-serif" font-size="10">LIVE SYSTEM</text>
+  <rect x="48" y="122" width="200" height="238" fill="#161616" stroke="#8d8d8d"/>
+  <text x="70" y="153" fill="#8daeff" font-family="Arial, Helvetica, sans-serif" font-size="11" letter-spacing="2">01 / PRODUCT</text>
+  <text x="70" y="196" fill="#fff" font-family="Arial, Helvetica, sans-serif" font-size="24" font-weight="700">Useful</text>
+  <text x="70" y="226" fill="#fff" font-family="Arial, Helvetica, sans-serif" font-size="24" font-weight="700">interfaces.</text>
+  <rect x="70" y="264" width="145" height="8" fill="#525252"/><rect x="70" y="285" width="105" height="8" fill="#525252"/>
+  <rect x="70" y="320" width="75" height="20" fill="#0f62fe"/>
+  <rect x="280" y="122" width="200" height="238" fill="#0f62fe"/>
+  <text x="302" y="153" fill="#d0e2ff" font-family="Arial, Helvetica, sans-serif" font-size="11" letter-spacing="2">02 / AUTOMATION</text>
+  <text x="302" y="196" fill="#fff" font-family="Arial, Helvetica, sans-serif" font-size="24" font-weight="700">Less</text>
+  <text x="302" y="226" fill="#fff" font-family="Arial, Helvetica, sans-serif" font-size="24" font-weight="700">repetition.</text>
+  <path d="M320 288h105M320 288l20-15M320 288l20 15M425 288l-20-15M425 288l-20 15" stroke="#fff" stroke-width="2" fill="none"/>
+  <rect x="512" y="122" width="200" height="238" fill="#161616" stroke="#8d8d8d"/>
+  <text x="534" y="153" fill="#8daeff" font-family="Arial, Helvetica, sans-serif" font-size="11" letter-spacing="2">03 / OPERATIONS</text>
+  <text x="534" y="196" fill="#fff" font-family="Arial, Helvetica, sans-serif" font-size="24" font-weight="700">Work that</text>
+  <text x="534" y="226" fill="#fff" font-family="Arial, Helvetica, sans-serif" font-size="24" font-weight="700">keeps moving.</text>
+  <rect x="534" y="268" width="132" height="9" fill="#525252"/><rect x="534" y="292" width="98" height="9" fill="#525252"/><rect x="534" y="316" width="115" height="9" fill="#0f62fe"/>
+  <text x="48" y="414" fill="#c6c6c6" font-family="Arial, Helvetica, sans-serif" font-size="12" letter-spacing="2">FROM FIRST MOVE</text>
+  <path d="M205 410h350" stroke="#0f62fe" stroke-width="3"/><path d="m535 393 25 17-25 17v-10H455v-14h80v-10Z" fill="#0f62fe"/>
+  <text x="590" y="414" fill="#c6c6c6" font-family="Arial, Helvetica, sans-serif" font-size="12" letter-spacing="2">TO ADVANTAGE</text>
+  <text x="48" y="474" fill="#8daeff" font-family="Arial, Helvetica, sans-serif" font-size="14">START AHEAD / BUILD WHAT LASTS</text>
+</svg>

@@ -1,0 +1,5 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 350 80" width="100%" height="100%">
+  <rect width="350" height="80" fill="#161616" />
+  <text x="20" y="55" font-family="'IBM Plex Sans', 'Helvetica Neue', sans-serif" font-weight="800" font-size="48" fill="#f4f4f4" letter-spacing="-1.5"><tspan>I-Start</tspan><tspan fill="#0f62fe">Up</tspan></text>
+  <line x1="20" y1="65" x2="150" y2="65" stroke="#0f62fe" stroke-width="4" stroke-linecap="square" />
+</svg>

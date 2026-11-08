@@ -1,4 +1,0 @@
-User-agent: *
-Disallow:
-
-Sitemap: https://i-startup.tn/sitemap.xml

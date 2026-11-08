@@ -1,320 +1,399 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <!-- Primary Meta Tags -->
-    <link rel="shortcut icon" href="Assets/logocon-full.png" type="image/x-icon">
-    <link rel="apple-touch-icon" sizes="180x180" href="Assets/logocon-full.png">
-    <link rel="icon" type="image/png" sizes="32x32" href="Assets/logocon-full.png">
-    <link rel="icon" type="image/png" sizes="16x16" href="Assets/logocon-full.png">
-    <link rel="canonical" href="https://www.i-startup.tn/">
-    <meta name="title" content="I-StartUp | Empowering Startups from Idea to Success" />
-    <meta name="description" content="I-StartUp provides dedicated IT support and business mentorship to help startups build MVPs and succeed in global markets." />
-    <meta name="keywords" content="startup, MVP, business mentorship, IT team, Tunisia, entrepreneurs">
-
-    <!-- Open Graph / Facebook -->
-    <meta property="og:type" content="website" />
-    <meta property="og:url" content="https://www.i-startup.tn/" />
-    <meta property="og:site_name" content="I-StartUp.tn" />
-    <meta property="og:title" content="Empowering Startups from Idea to Success" />
-    <meta property="og:description" content="Providing access to an IT team and expert mentorship to help startups build MVPs and succeed." />
-    <meta property="og:image" content="https://www.i-startup.tn/Assets/meta.png" />
-
-    <!-- Twitter -->
-    <meta name="twitter:card" content="summary_large_image">
-    <meta name="twitter:url" content="https://www.i-startup.tn/" />
-    <meta name="twitter:title" content="I-StartUp | Empowering Startups from Idea to Success" />
-    <meta name="twitter:description" content="I-StartUp helps startups with IT team support, MVP development, and business growth strategies." />
-    <meta name="twitter:image" content="https://www.i-startup.tn/Assets/meta.png" />
-
-    <title>I-StartUp | Empowering Startups from Idea to Success</title>
-
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
-
-    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/animate.js/1.0.0/animate.min.js"></script>
-    <link href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" rel="stylesheet">
-
-    <link rel="stylesheet" href="styles/main.css">
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>I-StartUp | Improve the Business You Already Run</title>
+  <meta property="og:type" content="website">
+  <meta property="og:site_name" content="I-StartUp">
+  <meta property="og:title" content="I-StartUp | Improve the Business You Already Run">
+  <meta property="og:description" content="I-StartUp helps established businesses improve operations with product engineering, automation, and reliable business systems—not businesses just starting out.">
+  <meta property="og:url" content="https://www.i-startup.tn/">
+  <meta property="og:image" content="https://www.i-startup.tn/assets/images/social-preview.svg">
+  <meta property="og:image:secure_url" content="https://www.i-startup.tn/assets/images/social-preview.svg">
+  <meta property="og:image:type" content="image/svg+xml">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
+  <meta property="og:image:alt" content="I-StartUp helps established businesses improve their systems and operations.">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="I-StartUp | Improve the Business You Already Run">
+  <meta name="twitter:description" content="I-StartUp helps established businesses improve operations with product engineering, automation, and reliable business systems—not businesses just starting out.">
+  <meta name="twitter:image" content="https://www.i-startup.tn/assets/images/social-preview.svg">
+  <meta name="twitter:image:alt" content="I-StartUp helps established businesses improve their systems and operations.">
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "ProfessionalService",
+    "name": "I-StartUp",
+    "url": "https://www.i-startup.tn/",
+    "logo": "https://www.i-startup.tn/assets/images/logo-horizontal-light.svg",
+    "image": "https://www.i-startup.tn/assets/images/social-preview.svg",
+    "description": "I-StartUp improves products, workflows, and business systems for established businesses ready to work better.",
+    "areaServed": "Worldwide",
+    "serviceType": ["Product engineering", "Business automation", "Internal systems", "Infrastructure management"]
+  }
+  </script>
+  <meta name="description" content="I-StartUp helps established businesses improve operations with product engineering, automation, and reliable business systems—not businesses just starting out.">
+  <meta name="author" content="I-StartUp">
+  <meta name="theme-color" content="#161616">
+  <link rel="canonical" href="https://www.i-startup.tn/">
+  <link rel="icon" href="/assets/images/icon-dark.svg" type="image/svg+xml">
+  <link rel="alternate icon" href="/assets/images/icon-light.svg" type="image/svg+xml" media="(prefers-color-scheme: light)">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@400;500;600;700&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="/assets/css/main.css">
 </head>
 
-<body >
+<body>
+  <a class="skip-link" href="#main">Skip to content</a>
+  <site-header></site-header>
 
-    <header class="w-full py-2 bg-white shadow-md fixed top-0 z-50">
-        <nav class="navbar navbar-expand-lg navbar-light container mx-auto flex justify-between items-center px-6">
-            <!-- Brand Logo -->
-            <a class="navbar-brand animate__animated animate__fadeInDown" href="index.html"><img src="Assets/logoname.png" width="98px" alt=""></a>
+  <main id="main">
+    <section class="hero" id="home">
+      <canvas class="hero-net" id="hero-net" aria-hidden="true"></canvas>
+      <div class="hero-glow" aria-hidden="true"></div>
+      <div class="wrap hero-grid">
+        <div class="hero-copy">
+          <p class="status-pill"><i class="status-dot fa-solid fa-circle" aria-hidden="true"></i> I-STARTUP / PRODUCT ENGINEERING</p>
+          <h1>Start ahead.<br><span>Build what lasts.</span></h1>
+          <p class="hero-lead">I-StartUp is for businesses already in motion—not businesses just starting out. We improve the products, workflows, and systems that make your day-to-day work better.</p>
+          <div class="hero-actions"><a class="button button-primary"
+              href="mailto:contact@i-startup.tn?subject=Project%20enquiry">Discuss a project <i
+                class="fa-solid fa-arrow-up-right-from-square" aria-hidden="true"></i></a><a class="button button-ghost"
+              href="/work/">See our work <i class="fa-solid fa-arrow-down" aria-hidden="true"></i></a></div>
+          <ul class="hero-points">
+            <li><i class="fa-solid fa-check" aria-hidden="true"></i> Strategy to launch</li>
+            <li><i class="fa-solid fa-check" aria-hidden="true"></i> Automation that saves time</li>
+            <li><i class="fa-solid fa-check" aria-hidden="true"></i> Systems that stay reliable</li>
+          </ul>
+        </div>
+        <div class="hero-card hero-dashboard" aria-label="I-StartUp starts projects ahead">
+          <div class="dashboard-heading"><span>POSITIONING / 01</span><strong><i></i> START AHEAD</strong></div>
+          <img class="hero-start-art" src="/assets/images/hero-work-systems.svg" alt="Product, automation, and operations systems connected in one working board">
+          <div class="card-stats">
+            <div><strong>01</strong><span>find the right move</span></div>
+            <div><strong>02</strong><span>build the advantage</span></div>
+          </div>
+          <div class="floating-chip chip-one"><i class="fa-solid fa-arrow-trend-up" aria-hidden="true"></i> Start with intent</div>
+          <div class="floating-chip chip-two"><i class="fa-solid fa-plus" aria-hidden="true"></i> Grow with structure</div>
+        </div>
+      </div>
+      <a class="scroll-cue" href="#intro"><span></span> Explore I-StartUp</a>
+    </section>
 
-            <!-- Hamburger Menu Button for Mobile -->
-            <button class="navbar-toggler nav-toggle text-gray-700 lg:hidden" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-                <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path>
-                </svg>
-            </button>
+    <section class="proof-strip" aria-label="I-StartUp team results">
+      <div class="wrap proof-grid">
+        <div class="proof-intro">
+          <p class="eyebrow">Built and operated</p>
+          <h2>A hands-on team from first build to daily operations.</h2>
+        </div>
+        <article><strong>9</strong><span>business domains managed</span><small>Domains, deployments &amp; business
+            email</small></article>
+        <article><strong>5</strong><span>project areas</span><small>Learning, operations, HR, identity &amp; business
+            systems</small></article>
+        <article><strong>80%</strong><span>less manual data entry</span><small>With a warehouse inventory system</small>
+        </article>
+      </div>
+    </section>
 
-            <!-- Navigation Links -->
-            <div class="collapse navbar-collapse lg:flex lg:space-x-6" id="navbarNav">
-                <ul class="navbar-nav ms-auto lg:flex space-x-6">
-                    <li class="nav-item">
-                        <a class="nav-link text-gray-700 hover:text-indigo-600" href="index.html">Home</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link text-gray-700 hover:text-indigo-600" href="programs.html">Programs</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link text-gray-700 hover:text-indigo-600" href="services.html">Services</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link text-gray-700 hover:text-indigo-600" href="application.html">Application</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link text-gray-700 hover:text-indigo-600" href="success-stories.html">Success Stories</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link text-gray-700 hover:text-indigo-600" href="contact.html">Contact</a>
-                    </li>
+    <section class="section intro-section" id="intro">
+      <div class="wrap intro-grid">
+        <div>
+          <p class="eyebrow">From idea to operations</p>
+          <h2 class="section-title">Technology should make work <span>simpler.</span></h2>
+        </div>
+        <p class="section-lead">We connect product thinking, engineering, and day-to-day operations. That means building
+          the right tool, launching it cleanly, and making sure the infrastructure around it keeps working.</p>
+      </div>
+      <div class="wrap promise-grid">
+        <article class="promise-card"><span class="promise-icon"><i class="fa-solid fa-cubes" aria-hidden="true"></i></span>
+          <h3>Products people can use</h3>
+          <p>Clear, dependable web products built around real customer needs.</p>
+        </article>
+        <article class="promise-card"><span class="promise-icon"><i class="fa-solid fa-arrows-rotate" aria-hidden="true"></i></span>
+          <h3>Workflows that flow</h3>
+          <p>Connected tools and automation that reduce manual handoffs.</p>
+        </article>
+        <article class="promise-card"><span class="promise-icon"><i class="fa-solid fa-server" aria-hidden="true"></i></span>
+          <h3>Operations that stay online</h3>
+          <p>Domain, hosting, email, deployment, and ongoing maintenance.</p>
+        </article>
+      </div>
+    </section>
+
+    <section class="section section-tinted" id="services">
+      <div class="wrap">
+        <div class="section-heading">
+          <div>
+            <p class="eyebrow">What we do</p>
+            <h2 class="section-title">One team for the product and what keeps it running.</h2>
+          </div>
+          <p class="section-lead">Work with I-StartUp from first scope through launch, operations, and the next
+            improvement.</p>
+        </div>
+        <div class="service-grid">
+          <article class="service-card"><span class="service-number">01 / BUILD</span>
+            <div class="service-icon"><i class="fa-solid fa-code" aria-hidden="true"></i></div>
+            <h3>Full-Stack Development</h3>
+            <p>Production-ready web apps, dashboards, APIs, and platforms, designed and shipped end to end.</p>
+            <ul>
+              <li>Web apps &amp; MVPs</li>
+              <li>Frontend, backend &amp; APIs</li>
+              <li>Deployment and iteration</li>
+            </ul><a href="/services/#development">Explore development <i class="fa-solid fa-arrow-up-right-from-square" aria-hidden="true"></i></a>
+          </article>
+          <article class="service-card"><span class="service-number">02 / AUTOMATE</span>
+            <div class="service-icon"><i class="fa-solid fa-gears" aria-hidden="true"></i></div>
+            <h3>Business Automation</h3>
+            <p>Connect your tools and automate the repetitive steps that slow down your team.</p>
+            <ul>
+              <li>Connected business workflows</li>
+              <li>Reporting &amp; data automation</li>
+              <li>Google Workspace systems</li>
+            </ul><a href="/services/#automation">Explore automation <i class="fa-solid fa-arrow-up-right-from-square" aria-hidden="true"></i></a>
+          </article>
+          <article class="service-card"><span class="service-number">03 / OPERATE</span>
+            <div class="service-icon"><i class="fa-solid fa-diagram-project" aria-hidden="true"></i></div>
+            <h3>Internal Systems</h3>
+            <p>Custom tools for recruitment, operations, and the behind-the-scenes work of a growing business.</p>
+            <ul>
+              <li>Workforce &amp; HR systems</li>
+              <li>Admin &amp; CRM dashboards</li>
+              <li>Process improvement</li>
+            </ul><a href="/services/#systems">Explore systems <i class="fa-solid fa-arrow-up-right-from-square" aria-hidden="true"></i></a>
+          </article>
+          <article class="service-card"><span class="service-number">04 / LAUNCH</span>
+            <div class="service-icon"><i class="fa-solid fa-cloud-arrow-up" aria-hidden="true"></i></div>
+            <h3>Domain &amp; Hosting Management</h3>
+            <p>Keep your digital presence online and up to date, from domain setup to hosting and deployment.</p>
+            <ul>
+              <li>Domain and DNS management</li>
+              <li>Hosting and SSL setup</li>
+              <li>Business email and deployments</li>
+            </ul><a href="/services/#domains">Explore hosting &amp; deployment <i class="fa-solid fa-arrow-up-right-from-square" aria-hidden="true"></i></a>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section why-section" id="about">
+      <div class="wrap why-grid">
+        <div>
+          <p class="eyebrow">Why I-StartUp</p>
+          <h2 class="section-title">A team focused on the <span>outcome.</span></h2>
+          <p class="section-lead">We care about what changes after launch: time returned to your team, people reached,
+            and useful products in customers’ hands.</p><a class="text-link" href="/about/">Meet the team
+            <i class="fa-solid fa-arrow-up-right-from-square" aria-hidden="true"></i></a>
+        </div>
+        <div class="benefit-list">
+          <article><span class="benefit-check"><i class="fa-solid fa-check" aria-hidden="true"></i></span>
+            <div>
+              <h3>A hands-on technical lead</h3>
+              <p>Work directly with I-StartUp tech lead Ali Cheikh, with clear ownership from planning through launch.
+              </p>
+            </div>
+          </article>
+          <article><span class="benefit-check"><i class="fa-solid fa-check" aria-hidden="true"></i></span>
+            <div>
+              <h3>Built around the actual problem</h3>
+              <p>We map the workflow first, then choose a practical approach that fits.</p>
+            </div>
+          </article>
+          <article><span class="benefit-check"><i class="fa-solid fa-check" aria-hidden="true"></i></span>
+            <div>
+              <h3>Support beyond launch</h3>
+              <p>Domains, hosting, email, updates, and maintenance stay part of the plan.</p>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section projects-section" id="work">
+      <div class="wrap">
+        <div class="section-heading">
+          <div>
+            <p class="eyebrow">Selected team work</p>
+            <h2 class="section-title">Useful things, built for real people.</h2>
+          </div><a class="text-link" href="/work/">More project stories <i class="fa-solid fa-arrow-up-right-from-square" aria-hidden="true"></i></a>
+        </div>
+        <div class="project-grid">
+          <article class="project-card project-featured">
+            <div class="project-visual bloolab-visual">
+              <div class="visual-orbit orbit-a"></div>
+              <div class="visual-orbit orbit-b"></div>
+              <div class="app-window">
+                <div class="app-bar"><i></i><i></i><i></i></div>
+                <div class="app-content"><span class="app-kicker">BLOOLAB · LEARN</span><strong>Curiosity,<br>meet your
+                    tutor.</strong>
+                  <div class="app-progress"><i></i></div><small>Your learning journey · 72%</small>
+                </div>
+              </div><span class="visual-badge">Learning platform</span>
+            </div>
+            <div class="project-copy">
+              <p class="project-type">EDTECH · LEARNING PLATFORM</p>
+              <h3>BlooLab</h3>
+              <p>A digital learning experience for kids, combining video lessons, quizzes, an interactive tutor, and
+                progress tracking.</p>
+              <div class="project-result"><strong>100+</strong><span>active learners</span><strong>Top
+                  15</strong><span>from 1,500 applicants</span></div>
+            </div>
+          </article>
+          <article class="project-card">
+            <div class="project-visual ocr-visual">
+              <div class="scan-sheet"><span class="scan-label">INVENTORY LABEL</span>
+                <div class="barcode">▥▥▥▥▥▥▥▥</div>
+                <div class="scan-lines"><i></i><i></i><i></i></div><span class="scan-result"><i class="fa-solid fa-check" aria-hidden="true"></i> Text captured</span>
+              </div><span class="visual-badge">OCR · Operations</span>
+            </div>
+            <div class="project-copy">
+              <p class="project-type">OPERATIONS · INVENTORY</p>
+              <h3>Warehouse registration system</h3>
+              <p>Label scanning and inventory registration reduced manual data-entry workload.</p>
+              <div class="project-result"><strong>80%</strong><span>less manual data entry</span></div>
+            </div>
+          </article>
+          <article class="project-card">
+            <div class="project-visual workforce-visual">
+              <div class="dashboard">
+                <div class="dash-sidebar"><b>TOGS</b><i></i><i></i><i></i><i></i></div>
+                <div class="dash-main"><span class="dash-title">Workforce overview</span>
+                  <div class="dash-metrics"><i></i><i></i><i></i></div>
+                  <div class="dash-table"><i></i><i></i><i></i><i></i></div>
+                </div>
+              </div><span class="visual-badge">Workforce operations</span>
+            </div>
+            <div class="project-copy">
+              <p class="project-type">HR-TECH · INTERNAL SYSTEM</p>
+              <h3>Workforce management</h3>
+              <p>A central system for job applications, interview scheduling, job postings, and recruitment operations.
+              </p>
+              <div class="project-tags"><span>Recruitment</span><span>Scheduling</span><span>Operations</span></div>
+            </div>
+          </article>
+          <article class="project-card">
+            <div class="project-visual nfc-visual">
+              <div class="nfc-card"><span class="nfc-mark">IS</span><strong>Tap to connect.</strong><small>One card.
+                  Your whole profile.</small>
+                <div class="nfc-wave">)))</div>
+              </div><span class="visual-badge">tccards.tn</span>
+            </div>
+            <div class="project-copy">
+              <p class="project-type">WEB PRODUCT · NFC</p>
+              <h3>Digital business cards</h3>
+              <p>A digital networking product that helps people share their profile with a simple tap.</p>
+              <div class="project-tags"><span>NFC</span><span>Web platform</span><span>Digital identity</span></div>
+            </div>
+          </article>
+          <article class="project-card">
+            <div class="project-visual reservation-visual">
+              <div class="reservation-board"><span>BOOKING / 01</span><strong>Choose a time.<br>We’ll take it from
+                  here.</strong>
+                <div><i></i><i></i><i></i><i></i><i></i></div><small>Appointments · Availability · Reminders</small>
+              </div><span class="visual-badge">Booking &amp; scheduling</span>
+            </div>
+            <div class="project-copy">
+              <p class="project-type">CUSTOM SOFTWARE · RESERVATIONS</p>
+              <h3>Reservation management</h3>
+              <p>A tailored booking flow for clinics, workshops, and service businesses to manage availability,
+                appointments, and follow-ups.</p>
+              <div class="project-tags"><span>Scheduling</span><span>Availability</span><span>Reminders</span></div>
+            </div>
+          </article>
+          <article class="project-card">
+            <div class="project-visual records-visual">
+              <div class="records-board"><span>CLIENT RECORD / 024</span><strong>Every visit,<br>clearly
+                  recorded.</strong>
+                <ul>
+                  <li>Visit &amp; service history</li>
+                  <li>Notes and next steps</li>
+                  <li>Customer details</li>
                 </ul>
+              </div><span class="visual-badge">Service records</span>
             </div>
-        </nav>
-    </header>
-
-<style>
-    #home{
-        background-image: url(Assets/index.png);
-        background-repeat: no-repeat;
-        background-size: cover;
-        background-blend-mode: color-burn;
-    }
-    #home a:hover{
-        scale: 1.1 ;
-    }
-</style>
-
-
-
-    <!-- Hero Section -->
-    <section id="home" class="bg-indigo-600 text-white h-screen flex flex-col justify-center items-center text-center pt-24 animate__animated animate__fadeIn">
-        <h1 class="text-5xl font-bold mb-4">Empowering Startups from Idea to Success</h1>
-        <p class="text-lg mb-8">Access expert IT teams and business guidance to develop your MVP and scale your business.</p>
-        <div class="flex flex-col sm:flex-row sm:space-x-4">
-            <a href="programs.html" class="bg-white text-indigo-600 px-6 py-3 rounded-md text-lg font-semibold" style="margin-top: 10px;"> Join Our Incubation Program </a>
-            <a href="programs.html" class="bg-transparent border-2 border-white text-white px-6 py-3 rounded-md text-lg font-semibold" style="margin-top: 10px;">Apply for Acceleration</a>
+            <div class="project-copy">
+              <p class="project-type">CUSTOM SOFTWARE · RECORD KEEPING</p>
+              <h3>Client &amp; service records</h3>
+              <p>A simple record-keeping tool for professionals to organize client details, visit notes, service
+                history, and next steps.</p>
+              <div class="project-tags"><span>Client records</span><span>Service history</span><span>Follow-ups</span>
+              </div>
+            </div>
+          </article>
         </div>
+      </div>
     </section>
 
-    <!-- Introduction Section -->
-    <section id="intro" class="py-8 bg-white text-center">
-        <div class="container mx-auto px-4">
-            <div class="container mx-auto px-4 py-12">
-                <!-- Title and Mission Statement -->
-                <h2 class="text-4xl font-bold mb-4 animate__animated animate__fadeInUp">
-                    Welcome to I-StartUp
-                </h2>
-                <p class="text-3xl font-bold text-gray-600 mb-8 animate__animated animate__fadeInUp" style="text-align: left;">
-                    Our mission is to empower early startups by solving two critical challenges: providing access to a dedicated IT team and guiding startups through MVP development.
-                </p>
-                <br>
-                <div class="container mx-auto px-4 py-12">
-                    <div class="flex flex-wrap md:flex-nowrap items-center mb-16">
-                        <div class="md:w-1/2 w-full md:pr-12 mb-8 md:mb-0 animate__fadeInLeft animate-on-scroll animate__delay-2s">
-                            <h1 class="text-3xl font-bold mb-6 text-transparent bg-clip-text bg-gradient-to-r from-yellow-500 to-blue-600">
-                                The Journey of Startups
-                            </h1>
-                            <p class="text-gray-700 mb-6 leading-relaxed">
-                                Startups are small, innovative businesses that aim to solve real-world problems by creating unique products or services. They often face challenges such as limited funding, market competition, and the need for a skilled team. Despite these hurdles, startups continue to drive innovation and economic growth worldwide, offering new solutions and creating jobs.
-                            </p>
-                            <p class="text-gray-700 leading-relaxed">
-                                The path from an idea to a successful business involves various stages, including ideation, validation, MVP development, scaling, and expansion. A crucial element for startups is the ability to adapt quickly to changing market conditions and customer needs.
-                            </p>
-                        </div>
-                        <div class="md:w-1/2 w-ful animate__animated animate__fadeInRight">
-                            <img src="Assets/meninsuite.gif" alt="Startup Journey" class="w-full h-auto rounded-lg shadow-xl transform transition-transform duration-500 animate-on-scroll">
-                        </div>
-                    </div>
-                <br>
-                    <div class="flex flex-wrap md:flex-nowrap items-center">
-                        <div class="md:w-1/2 w-full md:pr-12 mb-8 md:mb-0 animate__animated animate__fadeInLeft animate__delay-3s">
-                            <img src="https://startup.gov.tn/sites/default/files/brand/StartupTunisia-Logo-Small-01.png" alt="Startups in Tunisia" class="w-full h-auto rounded-lg shadow-xl transform transition-transform duration-300 ">
-                        </div>
-                        <div class="md:w-1/2 w-full animate__animated animate__fadeInRight animate-on-scroll">
-                            <h1 class="text-3xl font-bold mb-6 text-transparent bg-clip-text bg-gradient-to-r from-blue-500 to-red-600">
-                                Startups in Tunisia
-                            </h1>
-                            <p class="text-gray-700 mb-6 leading-relaxed">
-                                Tunisia has a growing startup ecosystem supported by government initiatives, accelerators, and incubators. The country is emerging as a tech hub in North Africa, attracting entrepreneurs who are eager to bring their innovative ideas to life. With a young and dynamic workforce, Tunisia offers a fertile ground for startups, especially in sectors like technology, education, and fintech.
-                            </p>
-                            <p class="text-gray-700 leading-relaxed">
-                                However, startups in Tunisia still face challenges such as securing funding, accessing global markets, and navigating bureaucratic processes. To overcome these hurdles, many startups are focusing on building strong networks and partnerships, both locally and internationally.
-                            </p>
-                        </div>
-                    </div>
-                </div>
-                <br>
-                <!-- <div class="bg-white py-20 sm:py-32">
-                    <div class="mx-auto max-w-7xl px-6 lg:px-8">
-                        <div class="mx-auto max-w-2xl lg:mx-0">
-                            <h2 class="text-pretty text-4xl font-semibold tracking-tight text-gray-900 sm:text-5xl">OUR BLOGS</h2>
-                            <p class="mt-2 text-lg leading-8 text-gray-600">Learn how to grow your business with our expert advice.</p>
-                        </div>
-                        <div class="mx-auto mt-10 grid max-w-2xl grid-cols-1 gap-x-8 gap-y-16 border-t border-gray-200 pt-10 sm:mt-16 sm:pt-16 lg:mx-0 lg:max-w-none lg:grid-cols-3">
-                        <article class="flex max-w-xl flex-col items-start justify-between">
-                            <div class="flex items-center gap-x-4 text-xs">
-                                <time datetime="2020-03-16" class="text-gray-500">Mar 16, 2020</time>
-                                <a href="#" class="relative z-10 rounded-full bg-gray-50 px-3 py-1.5 font-medium text-gray-600 hover:bg-gray-100">Marketing</a>
-                            </div>
-                            <div class="group relative">
-                                <h3 class="mt-3 text-lg font-semibold leading-6 text-gray-900 group-hover:text-gray-600">
-                                <a href="#">
-                                    <span class="absolute inset-0"></span>
-                                    Boost your conversion rate
-                                </a>
-                                </h3>
-                                <p class="mt-5 line-clamp-3 text-sm leading-6 text-gray-600">Illo sint voluptas. Error voluptates culpa eligendi. Hic vel totam vitae illo. Non aliquid explicabo necessitatibus unde. Sed exercitationem placeat consectetur nulla deserunt vel. Iusto corrupti dicta.</p>
-                            </div>
-                            <div class="relative mt-8 flex items-center gap-x-4">
-                                <img src="https://images.unsplash.com/photo-1519244703995-f4e0f30006d5?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80" alt="" class="h-10 w-10 rounded-full bg-gray-50">
-                                <div class="text-sm leading-6">
-                                <p class="font-semibold text-gray-900">
-                                    <a href="#">
-                                    <span class="absolute inset-0"></span>
-                                    Michael Foster
-                                    </a>
-                                </p>
-                                <p class="text-gray-600">Co-Founder / CTO</p>
-                                </div>
-                            </div>
-                        </article>
-                        <article class="flex max-w-xl flex-col items-start justify-between">
-                            <div class="flex items-center gap-x-4 text-xs">
-                                <time datetime="2020-03-16" class="text-gray-500">Mar 16, 2020</time>
-                                <a href="#" class="relative z-10 rounded-full bg-gray-50 px-3 py-1.5 font-medium text-gray-600 hover:bg-gray-100">Marketing</a>
-                            </div>
-                            <div class="group relative">
-                                <h3 class="mt-3 text-lg font-semibold leading-6 text-gray-900 group-hover:text-gray-600">
-                                <a href="#">
-                                    <span class="absolute inset-0"></span>
-                                    Boost your conversion rate
-                                </a>
-                                </h3>
-                                <p class="mt-5 line-clamp-3 text-sm leading-6 text-gray-600">Illo sint voluptas. Error voluptates culpa eligendi. Hic vel totam vitae illo. Non aliquid explicabo necessitatibus unde. Sed exercitationem placeat consectetur nulla deserunt vel. Iusto corrupti dicta.</p>
-                            </div>
-                            <div class="relative mt-8 flex items-center gap-x-4">
-                                <img src="https://images.unsplash.com/photo-1519244703995-f4e0f30006d5?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80" alt="" class="h-10 w-10 rounded-full bg-gray-50">
-                                <div class="text-sm leading-6">
-                                <p class="font-semibold text-gray-900">
-                                    <a href="#">
-                                    <span class="absolute inset-0"></span>
-                                    Michael Foster
-                                    </a>
-                                </p>
-                                <p class="text-gray-600">Co-Founder / CTO</p>
-                                </div>
-                            </div>
-                        </article>
-                        <article class="flex max-w-xl flex-col items-start justify-between">
-                            <div class="flex items-center gap-x-4 text-xs">
-                                <time datetime="2020-03-16" class="text-gray-500">Mar 16, 2020</time>
-                                <a href="#" class="relative z-10 rounded-full bg-gray-50 px-3 py-1.5 font-medium text-gray-600 hover:bg-gray-100">Marketing</a>
-                            </div>
-                            <div class="group relative">
-                                <h3 class="mt-3 text-lg font-semibold leading-6 text-gray-900 group-hover:text-gray-600">
-                                <a href="#">
-                                    <span class="absolute inset-0"></span>
-                                    Boost your conversion rate
-                                </a>
-                                </h3>
-                                <p class="mt-5 line-clamp-3 text-sm leading-6 text-gray-600">Illo sint voluptas. Error voluptates culpa eligendi. Hic vel totam vitae illo. Non aliquid explicabo necessitatibus unde. Sed exercitationem placeat consectetur nulla deserunt vel. Iusto corrupti dicta.</p>
-                            </div>
-                            <div class="relative mt-8 flex items-center gap-x-4">
-                                <img src="https://images.unsplash.com/photo-1519244703995-f4e0f30006d5?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80" alt="" class="h-10 w-10 rounded-full bg-gray-50">
-                                <div class="text-sm leading-6">
-                                <p class="font-semibold text-gray-900">
-                                    <a href="#">
-                                    <span class="absolute inset-0"></span>
-                                    Michael Foster
-                                    </a>
-                                </p>
-                                <p class="text-gray-600">Co-Founder / CTO</p>
-                                </div>
-                            </div>
-                        </article>
-                        </div>
-                        <br><br><br><a href="services.html" class="bg-indigo-600 text-white px-8 py-3 rounded-md text-lg font-semibold hover:bg-indigo-700 animate__animated animate__fadeInUp animate__delay-2s">Check Our Services</a>
-                    </div>
-                </div>
-                </div> -->
-            </div>
+    <section class="section process-section" id="process">
+      <div class="wrap">
+        <div class="center-heading">
+          <p class="eyebrow">How we work</p>
+          <h2 class="section-title">Clear steps. Useful results.</h2>
+          <p class="section-lead">A straightforward process keeps the work focused and the decisions easy.</p>
         </div>
-        </section>
-        <section style="background-color: #111827;margin-top: -100px;padding-top: 50px;">
-            <div class="max-w-7xl mx-auto p-8 lg:flex lg:items-center">
-                <div class="lg:w-1/2">
-                <img src="https://images.unsplash.com/photo-1522071820081-009f0129c71c?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2850&q=80" alt="Background Image" class="w-xl h-100 object-cover rounded-lg lg:rounded-none lg:rounded-tl-lg lg:rounded-bl-lg" >
-                </div>
-                <div class="lg:w-1/2 mt-6 lg:mt-0">
-                    <div class="bg-white py-4 px-6 sm:py-16 sm:px-8 lg:px-16 rounded-lg lg:rounded-none lg:rounded-tr-lg lg:rounded-br-lg">
-                        <h2 class="text-3xl font-bold text-gray-900 mb-4">Current track record</h2>
-                        <p class="text-lg text-gray-600 mb-6">"We've Got you Covered Partner* !!"</p>
-                        <p class="text-base text-gray-500 mb-8">Utilize our knowledge to your benefit providing it support and Advice to Initiatives that have the Potential to go to Market, Gain guidance from Active Entrepreneurs and more.</p>
-                        <dl class="grid grid-cols-1 gap-x-8 gap-y-12 text-center sm:grid-cols-2 lg:grid-cols-3">
-                        <div class="mx-auto flex max-w-xs flex-col gap-y-4 animate-on-scroll">
-                            <dt class="text-base leading-7 text-gray-600">Incubated Projects</dt>
-                            <dd class="order-first text-2xl font-semibold tracking-tight text-gray-900 sm:text-3xl">3 Completed</dd>
-                        </div>
-                        <div class="mx-auto flex max-w-xs flex-col gap-y-4 animate-on-scroll">
-                            <dt class="text-base leading-7 text-gray-600">In The Wait-List</dt>
-                            <dd class="order-first text-2xl font-semibold tracking-tight text-gray-900 sm:text-3xl">13 Applicants</dd>
-                        </div>
-                        <div class="mx-auto flex max-w-xs flex-col gap-y-4 animate-on-scroll animate-bounce -backdrop-hue-rotate-15">
-                            <dt class="text-base leading-7 text-gray-600">In Business Success</dt>
-                            <dd class="order-first text-2xl font-semibold tracking-tight text-gray-900 sm:text-3xl">49.9% Increase</dd>
-                        </div>
-                        </dl>
-                    </div>
-                </div>
-            </div>
-            <center>
-                <a href="contact.html" class="mt-12 inline-block bg-indigo-600 text-white px-8 py-3 rounded-md text-lg font-semibold hover:bg-indigo-700 animate__animated animate__fadeInUp animate__delay-8s">View Services</a>
-            </center>
-            <br><br><br>
+        <div class="process-grid">
+          <article><span>01</span>
+            <div class="process-icon"><i class="fa-solid fa-compass-drafting" aria-hidden="true"></i></div>
+            <h3>Talk it through</h3>
+            <p>We start with the problem, your workflow, and what a useful result looks like.</p>
+          </article>
+          <article><span>02</span>
+            <div class="process-icon"><i class="fa-solid fa-route" aria-hidden="true"></i></div>
+            <h3>Agree the plan</h3>
+            <p>Define scope, priorities, and a clear path to a first working version.</p>
+          </article>
+          <article><span>03</span>
+            <div class="process-icon"><i class="fa-solid fa-code-branch" aria-hidden="true"></i></div>
+            <h3>Build &amp; refine</h3>
+            <p>Ship useful increments and adjust from real feedback as we go.</p>
+          </article>
+          <article><span>04</span>
+            <div class="process-icon"><i class="fa-solid fa-rocket" aria-hidden="true"></i></div>
+            <h3>Launch &amp; support</h3>
+            <p>Deploy, document, and keep the product and its operations moving.</p>
+          </article>
+        </div>
+      </div>
     </section>
 
-    <footer class="bg-gray-900 text-gray-400 py-8">
-        <div class="container mx-auto px-6">
-            <!-- Logo on top in phone view -->
-            <div class="flex justify-center mb-4 md:hidden">
-                <img src="Assets/logocon-full-empty.png" alt="I-StartUp Logo" class="h-18 w-18">
-            </div>
-
-            <div class="flex flex-wrap justify-between items-center">
-                <!-- Social links -->
-                <div class="flex space-x-6 mb-4 md:mb-0 text-center px-14">
-                    <a href="https://discord.gg/eETmT344" class="hover:text-white">LinkedIn</a>
-                    <a href="https://discord.gg/eETmT344" class="hover:text-white">Discord</a>
-                    <a href="https://www.instagram.com/i_startup.tn/#" class="hover:text-white">Instagram</a>
-                </div>
-
-                <!-- Emails -->
-                <center>
-                    <div class="flex space-x-4 mb-4 md:mb-0">
-                        <a href="info.client@i-startup.tn" class="hover:text-white">info.client@i-startup.tn</a>
-                        <a href="contact@i-startup.tn" class="hover:text-white">contact@i-startup.tn</a>
-                    </div>
-                </center>
-
-                <!-- Copyright -->
-                <div class="w-full md:w-auto mb-4 md:mb-0">
-                    <p class="text-center md:text-left">© 2025 I-StartUp. All rights reserved.</p>
-                </div>
-            </div>
+    <section class="section faq-section">
+      <div class="wrap faq-grid">
+        <div>
+          <p class="eyebrow">FAQ</p>
+          <h2 class="section-title">Good questions, clear answers.</h2>
+          <p class="section-lead">Still wondering about something? <a href="mailto:contact@i-startup.tn">Contact our
+              tech lead.</a></p>
         </div>
-    </footer>
+        <div class="faq-list">
+          <details>
+            <summary>What kind of projects does I-StartUp take on?<i class="fa-solid fa-plus" aria-hidden="true"></i></summary>
+            <p>Web applications, MVPs, business software, workflow automation, dashboards, and internal systems for
+              growing teams.</p>
+          </details>
+          <details>
+            <summary>Can the team work with an existing product?<i class="fa-solid fa-plus" aria-hidden="true"></i></summary>
+            <p>Yes. We can take ownership of a feature or system, improve an existing workflow, or work alongside your
+              team.</p>
+          </details>
+          <details>
+            <summary>Can I-StartUp manage domains and hosting?<i class="fa-solid fa-plus" aria-hidden="true"></i></summary>
+            <p>Yes. We can help with domain and DNS management, hosting, SSL, email setup, deployment, and ongoing
+              updates.</p>
+          </details>
+          <details>
+            <summary>Where is I-StartUp based?<i class="fa-solid fa-plus" aria-hidden="true"></i></summary>
+            <p>Our team is based in Tunisia and works with teams remotely.</p>
+          </details>
+        </div>
+      </div>
+    </section>
 
-
-    <!-- Bootstrap and Animate.js Scripts -->
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/animate.js/1.0.0/animate.min.js"></script>
-    <script src="scripts/main.js"></script>
+  </main>
+  <site-footer></site-footer>
+  <script src="/assets/js/components.js" defer></script>
+  <script src="/assets/js/main.js" defer></script>
 </body>
+
 </html>

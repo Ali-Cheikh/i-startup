@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 760 440">
+  <rect width="760" height="440" fill="#161616"/>
+  <path d="M0 0h760M0 55h760M0 110h760M0 165h760M0 220h760M0 275h760M0 330h760M0 385h760M0 0v440M95 0v440M190 0v440M285 0v440M380 0v440M475 0v440M570 0v440M665 0v440" stroke="#525252" opacity=".4"/>
+  <rect x="72" y="64" width="616" height="312" fill="#262626" stroke="#8d8d8d"/>
+  <rect x="72" y="64" width="616" height="42" fill="#0f62fe"/>
+  <text x="96" y="91" fill="#fff" font-family="Arial, Helvetica, sans-serif" font-size="12" letter-spacing="2">PRODUCT / WORKSPACE</text>
+  <rect x="100" y="136" width="180" height="198" fill="#161616"/>
+  <text x="122" y="170" fill="#8daeff" font-family="Arial, Helvetica, sans-serif" font-size="11">OVERVIEW</text>
+  <text x="122" y="214" fill="#fff" font-family="Arial, Helvetica, sans-serif" font-size="22" font-weight="700">One place</text>
+  <text x="122" y="243" fill="#fff" font-family="Arial, Helvetica, sans-serif" font-size="22" font-weight="700">to work.</text>
+  <rect x="122" y="275" width="110" height="8" fill="#525252"/><rect x="122" y="299" width="78" height="8" fill="#0f62fe"/>
+  <rect x="310" y="136" width="350" height="86" fill="#f4f4f4"/><rect x="330" y="158" width="122" height="12" fill="#161616"/><rect x="330" y="188" width="260" height="8" fill="#8d8d8d"/>
+  <rect x="310" y="248" width="165" height="86" fill="#0f62fe"/><rect x="495" y="248" width="165" height="86" fill="#f4f4f4"/>
+</svg>
